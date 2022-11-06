@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "silal-events-solution-client-side-solution",
+    "id": "1c48c57a-e1af-4ef8-8633-8362359e918b",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.14.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "SilalEventsSolution description"
+      },
+      "longDescription": {
+        "default": "SilalEventsSolution description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "silal-events-solution Feature",
+        "description": "The feature that activates elements of the silal-events-solution solution.",
+        "id": "02be9fde-a411-42be-bc7e-080959e144c4",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/silal-events-solution.sppkg"
+  }
+}

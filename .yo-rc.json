@@ -1,0 +1,16 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": false,
+    "version": "1.14.0",
+    "libraryName": "silal-events-solution",
+    "libraryId": "1c48c57a-e1af-4ef8-8633-8362359e918b",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "SilalEventsSolution",
+    "solutionShortDescription": "SilalEventsSolution description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
