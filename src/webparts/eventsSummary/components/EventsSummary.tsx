@@ -4,40 +4,35 @@ import { DisplayMode } from "@microsoft/sp-core-library";
 import { FilmstripLayout } from "../../../shared/components/filmstripLayout/index";
 import { EventCard } from '../../../shared/components/EventCard';
 import { Pagination } from "../../../shared/components/Pagination";
+import styles from '../../../css/Silal.module.scss';
 import { ICalendarEvent } from '../../../shared/services/CalendarService';
 import * as strings from "EventsSummaryWebPartStrings";
 import { FocusZone, FocusZoneDirection, List, Spinner, css } from "office-ui-fabric-react";
 export const EventsSummary = (props: IEventsSummaryProps) => {
   const isEditMode: boolean = props.displayMode === DisplayMode.Edit;
   const [events, setEvents] = React.useState(props.events);
-  const [currentPage, setCurrentPage] = React.useState(1);
   return (<div>
     <div>
       <div role="application">
-        <FilmstripLayout
-          ariaLabel={strings.FilmStripAriaLabel}
-          clientWidth={props.clientWidth}
-          themeVariant={props.themeVariant}
-        >
+        <div className={styles.rowEvents}>
           {events.map((event: ICalendarEvent, index: number) => {
-            return (<EventCard
+            return (<div className={styles.columnEvents}><EventCard
               key={`eventCard${index}`}
               isEditMode={isEditMode}
               event={event}
               isNarrow={false}
-              themeVariant={props.themeVariant} />
+              themeVariant={props.themeVariant} /></div>
             );
           })}
-        </FilmstripLayout>
+        </div>
       </div>
     </div>
   </div>);
 };
 
-const renderNormalList = ({ clientWidth, themeVariant, propsEvents, displayMode }) => {
+const RenderNormalList = ({ clientWidth, themeVariant, propsEvents, displayMode }) => {
   const isEditMode: boolean = displayMode === DisplayMode.Edit;
   const [events, setEvents] = React.useState(propsEvents);
-  const [currentPage, setCurrentPage] = React.useState(1);
   return (<div>
     <div>
       <div role="application">
@@ -60,7 +55,7 @@ const renderNormalList = ({ clientWidth, themeVariant, propsEvents, displayMode 
     </div>
   </div>);
 };
-const _renderNarrowList = (props: IEventsSummaryProps) => {
+const RenderNarrowList = (props: IEventsSummaryProps) => {
 
   const [events, setEvents] = React.useState(props.events);
   const [currentPage, setCurrentPage] = React.useState(1);

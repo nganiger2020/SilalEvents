@@ -823,3 +823,31 @@ ul#example li p {
     background-color: transparent;
     color: #4A4A4A !important;
 }
+
+
+/* Float four columns side by side */
+.columnEvents {
+    float: left;
+    width: 33%;
+    padding: 10px 10px;
+  }
+
+  /* Remove extra left and right margins, due to padding */
+  .rowEvents {margin: 0 -5px;}
+  
+  /* Clear floats after the columns */
+  .rowEvents:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .columnEvents {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  

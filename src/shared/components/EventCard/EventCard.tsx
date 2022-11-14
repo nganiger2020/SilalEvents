@@ -154,7 +154,7 @@ export const EventCard = (props: IEventCardProps) => {
                   themeVariant={themeVariant}
                 />
               </div>
-              <div className={styles.detailsContainer}>
+              <div className={styles.eventDetailsContainer}>
                 <div className={styles.category} style={themeVariant && { color: subTextColor }}>{category}</div>
                 <div className={styles.title} style={themeVariant && { color: textColor }}>{title}</div>
                 <div className={styles.datetime} style={themeVariant && { color: subTextColor }}>{dateString}</div>
