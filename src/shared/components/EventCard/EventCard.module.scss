@@ -2,9 +2,9 @@
 
 .cardWrapper {
   border: 1px solid;
-  border-color: transparent;
+  border-color: #cdcdcd !important;;
   box-sizing: border-box;
-  outline: transparent;
+  outline: #cdcdcd !important;
 }
 
 .compactCard {
@@ -19,11 +19,11 @@
 }
 
 .cardWrapper:focus {
-  border-color: $ms-color-neutralSecondary;
+  border-color: #cdcdcd !important;
 }
 
 .cardWrapper .dateBox {
-  border-color: $ms-color-neutralLight;
+  border-color: #cdcdcd !important;
 }
 
 .normalCard .dateBoxContainer {
@@ -44,7 +44,7 @@
 .compactCard .dateBox {
   margin: auto 14px auto 0;
   min-width: 64px;
-  background-color: $ms-color-white;
+  background-color: #cdcdcd !important;
 }
 
 [dir=rtl] .compactCard .dateBox {
